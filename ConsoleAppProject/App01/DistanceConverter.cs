@@ -10,5 +10,11 @@ namespace ConsoleAppProject.App01
     /// </author>
     public class DistanceConverter
     {
+        public void Run()
+    {
+        Console.WriteLine("Please enter the number of mixture.");
+        int miles = Convert.ToInt32(Console.ReadLine());
+    }
+
     }
 }
