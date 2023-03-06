@@ -1,33 +1,62 @@
-﻿using ConsoleAppProject.App01;
-using ConsoleAppProject.App03;
-using ConsoleAppProject.Helpers;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnitConverter; // Add this line to import the "UnitConverter" namespace
+using BMI; // Add this line to import the "BMICalculator" namespace
 
-namespace ConsoleAppProject
+namespace BodyShape
 {
-    /// <summary>
-    /// The main method in this class is called first
-    /// when the application is started.  It will be used
-    /// to start App01 to App05 for CO453 CW1
-    /// 
-    /// This Project has been modified by:
-    /// Derek Peacock 05/02/2022
-    /// </summary>
-    public static class Program
+    internal class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            int choice = 0;
 
-            Console.WriteLine();
-            Console.WriteLine(" =================================================");
-            Console.WriteLine("    BNU CO453 Applications Programming 2021-2022! ");
-            Console.WriteLine("        by Rayan                                  ");
-            Console.WriteLine(" =================================================");
-            Console.WriteLine();
+            while (choice != 3)
+            {
+                Console.WriteLine("==============");
+                Console.WriteLine("BMI Calculator");
+                Console.WriteLine("by Rayan Syed");
+                Console.WriteLine("==============");
+                Console.WriteLine("\nPlease select an option:");
+                Console.WriteLine("1. Unit Converter");
+                Console.WriteLine("2. BMI Calculator");
+                Console.WriteLine("3. Exit Program");
 
-            DistanceConverter converter = new DistanceConverter();
-            converter.Run();
+                ///Runs only incase of wrong input by user in the menu
+                if (!int.TryParse(Console.ReadLine(), out choice))
+                {
+                    Console.WriteLine("Invalid input. Please enter a number.");
+                    continue;
+                }
+                ///checks the user input and runs the program accordingly
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("Starting Unit Converter...");
+                        Console.WriteLine();
+                        UnitConverter.Program.Main(null);
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Starting BMI Calculator...");
+                        Console.WriteLine();
+                        BMI.Program.Main(null);
+                        break;
+
+                    case 3:
+                        Console.WriteLine("Exiting program...");
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
+                }
+
+                Console.WriteLine();
+            }
         }
     }
 }
