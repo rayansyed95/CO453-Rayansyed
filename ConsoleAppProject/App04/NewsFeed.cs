@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 
@@ -22,6 +22,7 @@ namespace ConsoleAppProject.App04
     {
         private readonly List<MessagePost> messages;
         private readonly List<PhotoPost> photos;
+       
 
         ///<summary>
         /// Construct an empty news feed.
@@ -42,7 +43,6 @@ namespace ConsoleAppProject.App04
         {
             messages.Add(message);
         }
-
         ///<summary>
         /// Add a photo post to the news feed.
         /// 
@@ -52,7 +52,7 @@ namespace ConsoleAppProject.App04
         {
             photos.Add(photo);
         }
-
+        
         ///<summary>
         /// Show the news feed. Currently: print the news feed details to the
         /// terminal. (To do: replace this later with display in web browser.)
@@ -73,6 +73,37 @@ namespace ConsoleAppProject.App04
                 Console.WriteLine();   // empty line between posts
             }
         }
+
+        
+        ///<summary>
+        /// Display all posts by a given author.
+        ///
+        /// @param authorName The name of the author to filter posts by.
+        ///</summary>
+        public void DisplayPostsOfAuthor(string authorName)
+        {
+            // display all text posts by author
+            foreach (MessagePost message in messages)
+            {
+                if (message.Username == authorName)
+                {
+                    message.Display();
+                    Console.WriteLine();   // empty line between posts
+                }
+            }
+
+            // display all photos by author
+            foreach (PhotoPost photo in photos)
+            {
+                if (photo.Username == authorName)
+                {
+                    photo.Display();
+                    Console.WriteLine();   // empty line between posts
+                }
+            }
+        }
+
+
     }
 
 }
