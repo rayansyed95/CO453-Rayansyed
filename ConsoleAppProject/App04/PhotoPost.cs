@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 
@@ -10,7 +10,7 @@ namespace ConsoleAppProject.App04
     /// Other data, such as author and time, are also stored.
     ///</summary>
     /// <author>
-    /// Michael Kölling and David J. Barnes
+    /// Michael Kölling and David J. Barnes - Updated by Rayan Syed
     /// @version 0.1
     /// </author>
     public class PhotoPost
@@ -20,15 +20,15 @@ namespace ConsoleAppProject.App04
 
         // the name of the image file
         public String Filename { get; set; }
-        
+
         // a one line image caption
-        public String Caption { get; set; }   
-        
+        public String Caption { get; set; }
+
         public DateTime Timestamp { get; }
 
         private int likes;
-        
-        private readonly  List<String> comments;
+
+        private readonly List<String> comments;
 
         ///<summary>
         /// Constructor for objects of class PhotoPost.
@@ -86,7 +86,6 @@ namespace ConsoleAppProject.App04
             comments.Add(text);
         }
 
-
         ///<summary>
         /// Display the details of this post.
         /// 
@@ -136,8 +135,8 @@ namespace ConsoleAppProject.App04
         private String FormatElapsedTime(DateTime time)
         {
             DateTime current = DateTime.Now;
-            TimeSpan timePast = current - time; 
-            
+            TimeSpan timePast = current - time;
+
             long seconds = (long)timePast.TotalSeconds;
             long minutes = seconds / 60;
 
