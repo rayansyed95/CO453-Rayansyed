@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace ConsoleAppProject.App04
@@ -9,7 +9,7 @@ namespace ConsoleAppProject.App04
     /// text message. Other data, such as author and time, are also stored.
     /// </summary>
     /// <author>
-    /// Michael Kölling and David J. Barnes
+    /// Michael Kölling and David J. Barnes - Updated by Rayan Syed
     /// version 0.1
     /// </author>
     public class MessagePost
@@ -49,6 +49,7 @@ namespace ConsoleAppProject.App04
         /// <summary>
         /// Record one more 'Like' indication from a user.
         /// </summary>
+
         public void Like()
         {
             likes++;
@@ -66,11 +67,11 @@ namespace ConsoleAppProject.App04
         }
 
         ///<summary>
-        /// Add a comment to this post.
-        /// </summary>
-        /// <param name="text">
-        /// The new comment to add.
-        /// </param>        
+           /// Add a comment to this post.
+           /// </summary>
+           /// <param name="text">
+           /// The new comment to add.
+           /// </param>        
         public void AddComment(String text)
         {
             comments.Add(text);
@@ -124,11 +125,11 @@ namespace ConsoleAppProject.App04
         private String FormatElapsedTime(DateTime time)
         {
             DateTime current = DateTime.Now;
-            TimeSpan timePast = current - time; 
+            TimeSpan timePast = current - time;
 
             long seconds = (long)timePast.TotalSeconds;
             long minutes = seconds / 60;
-            
+
             if (minutes > 0)
             {
                 return minutes + " minutes ago";
