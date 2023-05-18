@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment0.text=\r\n\ This\ class\ sets\ the\ main\ world\ for\ the\ game\r\n\ \r\n\ @authors\ Rayan\ Yousuf\ Syed\ &\ James\ Ptrick\ Arellano\ \r\n\ @1.0\r\n
+comment1.params=
+comment1.target=MyWorld()
+comment2.params=
+comment2.target=Player\ getPlayer()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ SpawnZombies()
+numComments=5
