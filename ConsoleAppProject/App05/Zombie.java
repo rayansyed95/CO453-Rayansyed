@@ -26,7 +26,7 @@ public class Zombie extends Actor
     {
         moveAround();
         hitByProjectile();
-    }
+     }
     public void moveAround()
     {
     move(1);

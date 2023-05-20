@@ -41,6 +41,7 @@ public class HealthBar extends Actor
         }
         if(health<=0){ //if health gets to zero then we lose
             getWorld().showText("You Lose! \n You survived for " + (myWorld.getPlayer().time/60) + " seconds", getWorld().getWidth()/2, getWorld().getHeight()/2);
+            Greenfoot.playSound("sounds/you-lose.mp3");
             Greenfoot.stop();
         }
     }

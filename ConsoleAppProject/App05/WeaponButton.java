@@ -22,6 +22,11 @@ public class WeaponButton extends Actor
     }
     public void act() //function to check if we have clicked the upgrade weapon button and accordingly adjust the cash and increase firing projectiles
     {
+        if (counter.money >= 149 && counter.money <= 169 && weaponUpgrade != 3)
+        {
+            Greenfoot.playSound("sounds/level-up.mp3");
+        }
+
         if(Greenfoot.mousePressed(this) && counter.money > 149)
         {
             counter.money = counter.money - 150;

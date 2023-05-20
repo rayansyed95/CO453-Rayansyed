@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * This class sets the main world for the game
  * 
- * @authors Rayan Yousuf Syed & James Ptrick Arellano 
+ * @authors Rayan Yousuf Syed & James Patrick Arellano 
  * @1.0
  */
 public class MyWorld extends World
@@ -34,9 +34,26 @@ public class MyWorld extends World
         addObject(weaponButton, 900, 100);
         BackgroundMusic backgroundMusic = new BackgroundMusic();
         addObject(backgroundMusic, getWidth() / 2, getHeight() / 2);
+        prepare();
         //above lines add different objects on the world screen
     }
-    
+    private void prepare() {
+        // Create instances of the fixed object classes and add them to the world
+        Wall wall1 = new Wall();
+        addObject(wall1, 100, 300);
+        Wall wall2 = new Wall();
+        addObject(wall2, 200, 300);
+        
+        Tree tree1 = new Tree();
+        addObject(tree1, 600, 350);
+        Tree tree2 = new Tree();
+        addObject(tree2, 600, 450);
+
+        Rock rock1 = new Rock();
+        addObject(rock1, 700, 700);
+        Rock rock2 = new Rock();
+        addObject(rock2, 800, 700);
+    }
     public Player getPlayer() //function to call the player
     {
         return mainPlayer;
