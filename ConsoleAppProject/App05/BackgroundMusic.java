@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * This class is for the Background Music of the game
  * 
- * @authors Rayan Yousuf Syed & James Ptrick Arellano 
+ * @authors James Patrick Arellano 
  * @1.0
  */
 public class BackgroundMusic extends Actor

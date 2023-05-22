@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Player
-comment0.text=\r\n\ This\ class\ is\ associated\ with\ the\ main\ player\r\n\ \r\n\ @authors\ Rayan\ Yousuf\ Syed\ &\ James\ Ptrick\ Arellano\ \r\n\ @1.0\r\n
+comment0.text=\r\n\ This\ class\ is\ associated\ with\ the\ main\ player\r\n\ \r\n\ @authors\ James\ Patrick\ Arellano\r\n\ @1.0\r\n
 comment1.params=
 comment1.target=Player()
 comment2.params=weaponButton

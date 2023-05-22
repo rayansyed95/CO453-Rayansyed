@@ -3,7 +3,7 @@
 /**
  * This class is associated with the main player
  * 
- * @authors Rayan Yousuf Syed & James Ptrick Arellano 
+ * @authors James Patrick Arellano
  * @1.0
  */
 public class Player extends Actor

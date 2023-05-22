@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=WeaponButton
-comment0.text=\r\n\ This\ class\ is\ for\ the\ weapons\ upgrade\r\n\ \r\n\ @authors\ Rayan\ Yousuf\ Syed\ &\ James\ Ptrick\ Arellano\ \r\n\ @1.0\r\n
+comment0.text=\r\n\ This\ class\ is\ for\ the\ weapons\ upgrade\r\n\ \r\n\ @author\ Rayan\ Yousuf\ Syed\r\n\ @version\ 1.0\r\n
 comment1.params=counter
 comment1.target=WeaponButton(Counter)
 comment2.params=

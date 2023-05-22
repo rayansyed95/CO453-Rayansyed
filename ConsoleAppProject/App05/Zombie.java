@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * This is the zombie class
  * 
- * @authors Rayan Yousuf Syed & James Ptrick Arellano 
- * @1.0
+ * @author Rayan Yousuf Syed
+ * @version 1.0
  */
 public class Zombie extends Actor
 {

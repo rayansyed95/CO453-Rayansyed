@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * This is the projectile class
  * 
- * @authors Rayan Yousuf Syed & James Ptrick Arellano 
+ * @authors James Patrick Arellano 
  * @1.0
  */
 public class Projectile extends Actor

@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * All the counters displayed here in this class
  * 
- * @authors Rayan Yousuf Syed & James Ptrick Arellano 
+ * @authors James Patrick Arellano 
  * @1.0
  */
 public class Counter extends Actor
@@ -36,6 +36,7 @@ public class Counter extends Actor
         if((time/60) == 360) //after 6 minutes, game will end and the message will appear on the screen
         {
             getWorld().showText("Congratulations, You Win!", getWorld().getWidth()/2, getWorld().getHeight()/2);
+            Greenfoot.playSound("sounds/you-win.wav");
             Greenfoot.stop(); // this will stop the game
         }
     }
