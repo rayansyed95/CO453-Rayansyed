@@ -1,38 +1,58 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This is the zombie class
+ * This class represents the zombies in the game. Zombies move around the game world, target the player, and interact with other game objects like Projectiles and Obstacles.
  * 
  * @author Rayan Yousuf Syed
- * @version 1.0
+ * @version 2.0
  */
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
 public class Zombie extends Actor
 {
-    /**
-     * Act - do whatever the Zombie wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    int health = 1; //this is how many projectiles the zombie will take to die. Right now, zombies will be killed by 1 bullet.
+    int health = 10; 
     Player player;
     Counter counter;
-     public Zombie(Player mainPlayer, Counter counter) //design of zombies
+    private int moveCount = 0;
+    private int randomDirection = 0;
+    
+    public Zombie(Player mainPlayer, Counter counter)
     {
         this.counter = counter;
         player = mainPlayer;
         setImage("skull.png");
-        getImage().scale(25,25);
+        getImage().scale(35,35);
     }
+    
     public void act()
     {
         moveAround();
         hitByProjectile();
-     }
+    }
+    
     public void moveAround()
     {
-    move(1);
-    turnTowards(player.getX(), player.getY());
+        move(1);
+        Actor obstacle = getOneIntersectingObject(Obstacle.class);
+        if(obstacle != null)
+        {
+            if(moveCount <= 0)
+            {
+                randomDirection = Greenfoot.getRandomNumber(360);
+                moveCount = 50;
+            }
+            setRotation(randomDirection);
+            moveCount--;
+        }
+        else
+        {
+            turnTowards(player.getX(), player.getY());
+        }
     }
-    public void hitByProjectile() //fuction to remove zombies from screen if they are hit by a projectile
+    
+    public void hitByProjectile()
     {
         Actor projectile = getOneIntersectingObject(Projectile.class);
         if(projectile != null)
@@ -40,11 +60,13 @@ public class Zombie extends Actor
             health--;
             getWorld().removeObject(projectile);
         }
-        if(health == 0) //checks if the zombie is killed so accordingly our score and cash increased.
+        if(health == 0)
         {
             counter.score++; 
-            counter.money+=5; //5 points are added for every kill
+            counter.money+=2;
             getWorld().removeObject(this);
         }
     }
 }
+
+

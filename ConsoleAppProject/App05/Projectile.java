@@ -1,27 +1,24 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This is the projectile class
+ * This class represents the projectiles fired by the Player. It is responsible for its own movement and interactions with other game objects.
  * 
- * @authors James Patrick Arellano 
- * @1.0
+ * @authors Rayan Syed 
+ * @2.0
  */
 public class Projectile extends Actor
 {
-    /**
-     * Act - do whatever the Projectile wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public Projectile() //designing projectile
     {
         setImage(new GreenfootImage(10, 2));
         getImage().setColor(Color.YELLOW);
         getImage().fillRect(0,0,10,2);
     }
+    
     public void act() //removing projectile if they hit the edge of screen.
     {
         move(20);
-        if(isAtEdge())
+        if(isAtEdge() || getOneIntersectingObject(Obstacle.class) != null)
         {
             getWorld().removeObject(this);
         }

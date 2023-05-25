@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This class sets the main world for the game
- * 
- * @authors Rayan Yousuf Syed & James Patrick Arellano 
- * @1.0
+ * This class represents the primary game world where all the game objects exist.
+ * This class initializes the game objects and sets up the world. 
+ * @authors James Patrick Arellano & Rayan Syed 
+ * @2.0
  */
 public class MyWorld extends World
 {
@@ -40,86 +40,79 @@ public class MyWorld extends World
     private void prepare() {
         // Create instances of the fixed object classes and add them to the world
         Wall wall1 = new Wall();
-        addObject(wall1, 100, 300);
-        Wall wall12 = new Wall();
-        addObject(wall12, 100, 400);
-        Wall wall13 = new Wall();
-        addObject(wall13, 100, 500);
-        Wall wall14 = new Wall();
-        addObject(wall14, 100, 600);
+        addObject(wall1, 123, 276);
         Wall wall2 = new Wall();
-        addObject(wall2, 200, 300);
+        addObject(wall2, 175, 276);
         Wall wall3 = new Wall();
-        addObject(wall3, 300, 300);
-        Wall wall32 = new Wall();
-        addObject(wall32, 300, 400);
-        Wall wall33 = new Wall();
-        addObject(wall33, 300, 500);
-        Wall wall34 = new Wall();
-        addObject(wall34, 300, 600);
+        addObject(wall3, 228, 276);
         Wall wall4 = new Wall();
-        addObject(wall4, 400, 300);
+        addObject(wall4, 185, 584);
         Wall wall5 = new Wall();
-        addObject(wall5, 500, 300);
-        //add if needed, because its hiding the player
-        //Wall wall52 = new Wall();
-        //addObject(wall52, 500, 400);
-        Wall wall53 = new Wall();
-        addObject(wall53, 500, 500);
-        Wall wall54 = new Wall();
-        addObject(wall54, 500, 600);
+        addObject(wall5, 402, 450);
         Wall wall6 = new Wall();
-        addObject(wall6, 600, 300);
+        addObject(wall6, 455, 450);
         Wall wall7 = new Wall();
-        addObject(wall7, 700, 300);
-        Wall wall72 = new Wall();
-        addObject(wall72, 700, 400);
-        Wall wall73 = new Wall();
-        addObject(wall73, 700, 500);
-        Wall wall74 = new Wall();
-        addObject(wall74, 700, 600);
+        addObject(wall7, 508, 450);
         Wall wall8 = new Wall();
-        addObject(wall8, 800, 300);
+        addObject(wall8, 561, 450);
         Wall wall9 = new Wall();
-        addObject(wall9, 900, 300);
-        Wall wall92 = new Wall();
-        addObject(wall92, 900, 400);
-        Wall wall93 = new Wall();
-        addObject(wall93, 900, 500);
-        Wall wall94 = new Wall();
-        addObject(wall94, 900, 600);
+        addObject(wall9, 614, 450);
+        Wall wall10 = new Wall();
+        addObject(wall10, 783, 278);
+        Wall wall11 = new Wall();
+        addObject(wall11, 836, 278);
+        Wall wall12 = new Wall();
+        addObject(wall12, 889, 277);
+        Wall wall13 = new Wall();
+        addObject(wall13, 849, 580);
+        Wall wall14 = new Wall();
+        addObject(wall14, 524, 136);
+        Wall wall15 = new Wall();
+        addObject(wall15, 519, 619);
+        
+        
         
         Tree tree1 = new Tree();
-        addObject(tree1, 400, 400);
+        addObject(tree1, 113, 223);
         Tree tree2 = new Tree();
-        addObject(tree2, 400, 500);
+        addObject(tree2, 161, 220);
         Tree tree3 = new Tree();
-        addObject(tree3, 400, 600);
+        addObject(tree3, 210, 223);
         Tree tree4 = new Tree();
-        addObject(tree4, 600, 400);
+        addObject(tree4, 519, 81);
         Tree tree5 = new Tree();
-        addObject(tree5, 600, 500);
+        addObject(tree5, 777, 225);
         Tree tree6 = new Tree();
-        addObject(tree6, 600, 600);
+        addObject(tree6, 830, 221);
+        Tree tree7 = new Tree();
+        addObject(tree7, 880, 222);
+        Tree tree8 = new Tree();
+        addObject(tree8, 395, 394);
+        Tree tree9 = new Tree();
+        addObject(tree9, 420, 392);
+        Tree tree10 = new Tree();
+        addObject(tree10, 580, 395);
+        Tree tree11 = new Tree();
+        addObject(tree11, 608, 395);
+        Tree tree12 = new Tree();
+        addObject(tree12, 162, 539);
+        Tree tree13 = new Tree();
+        addObject(tree13, 195, 540);
+        
+        Tree tree14 = new Tree();
+        addObject(tree14, 513, 571);
+        
+        
+        Tree tree15 = new Tree();
+        addObject(tree15, 820, 534);
+        Tree tree16 = new Tree();
+        addObject(tree16, 855, 536);
+        
+        
+        
 
-        Rock rock1 = new Rock();
-        addObject(rock1, 100, 700);
-        Rock rock2 = new Rock();
-        addObject(rock2, 200, 700);
-        Rock rock3 = new Rock();
-        addObject(rock3, 300, 700);
-        Rock rock4 = new Rock();
-        addObject(rock4, 400, 700);
-        Rock rock5 = new Rock();
-        addObject(rock5, 500, 700);
-        Rock rock6 = new Rock();
-        addObject(rock6, 600, 700);
-        Rock rock7 = new Rock();
-        addObject(rock7, 700, 700);
-        Rock rock8 = new Rock();
-        addObject(rock8, 800, 700);
-        Rock rock9 = new Rock();
-        addObject(rock9, 900, 700);
+        
+
     }
     public Player getPlayer() //function to call the player
     {

@@ -1,21 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Wall here.
+ * This class represents a Wall object in the game which is a kind of Obstacle.
  * 
  * @author Rayan Yousuf Syed
- * @version 1.0
+ * @version 2.0
  */
-public class Wall extends Actor
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+public class Wall extends Obstacle
 {
-    /**
-     * Act - do whatever the Wall wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public Wall() 
     {
         setImage("wall.png"); // Set the image for the wall object
     }
+    
     public void act()
     {
         // Add your action code here.

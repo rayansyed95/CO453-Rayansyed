@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=Zombie
-comment0.text=\r\n\ This\ is\ the\ zombie\ class\r\n\ \r\n\ @author\ Rayan\ Yousuf\ Syed\r\n\ @version\ 1.0\r\n
 comment1.params=mainPlayer\ counter
 comment1.target=Zombie(Player,\ Counter)
 comment2.params=

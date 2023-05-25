@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * The health bar at the top of the player is controlled in this class
  * 
  * @authors James Patrick Arellano 
- * @1.0
+ * @2.0
  */
 public class HealthBar extends Actor
 {

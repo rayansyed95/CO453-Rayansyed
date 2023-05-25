@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=MyWorld
-comment0.text=\r\n\ This\ class\ sets\ the\ main\ world\ for\ the\ game\r\n\ \r\n\ @authors\ Rayan\ Yousuf\ Syed\ &\ James\ Patrick\ Arellano\ \r\n\ @1.0\r\n
+comment0.text=\r\n\ This\ class\ represents\ the\ primary\ game\ world\ where\ all\ the\ game\ objects\ exist.\r\n\ This\ class\ initializes\ the\ game\ objects\ and\ sets\ up\ the\ world.\ \r\n\ @authors\ James\ Patrick\ Arellano\ &\ Rayan\ Syed\ \r\n\ @2.0\r\n
 comment1.params=
 comment1.target=MyWorld()
 comment2.params=

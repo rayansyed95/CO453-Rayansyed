@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This class is for the Background Music of the game
+ * This class is responsible for playing the background music throughout the game.
  * 
  * @authors James Patrick Arellano 
- * @1.0
+ * @2.0
  */
 public class BackgroundMusic extends Actor
 {

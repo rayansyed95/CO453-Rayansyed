@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This class is for the weapons upgrade
+ * This class represents a button in the game interface that lets the player upgrade their weapon. It interacts with the Counter class to adjust the player's score and money.
  * 
  * @author Rayan Yousuf Syed
- * @version 1.0
+ * @version 2.0
  */
 public class WeaponButton extends Actor
 {
@@ -18,7 +18,7 @@ public class WeaponButton extends Actor
     {
         this.counter = counter;
         setImage("rocket.png");
-        getImage().scale(50,50);
+        getImage().scale(100,100);
     }
     public void act() //function to check if we have clicked the upgrade weapon button and accordingly adjust the cash and increase firing projectiles
     {
