@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Zombie
+comment1.params=mainPlayer\ counter
+comment1.target=Zombie(Player,\ Counter)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ moveAround()
+comment4.params=
+comment4.target=void\ hitByProjectile()
+numComments=5

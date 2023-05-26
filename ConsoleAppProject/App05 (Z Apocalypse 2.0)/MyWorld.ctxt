@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment0.text=\r\n\ This\ class\ represents\ the\ primary\ game\ world\ where\ all\ the\ game\ objects\ exist.\r\n\ This\ class\ initializes\ the\ game\ objects\ and\ sets\ up\ the\ world.\ \r\n\ @authors\ James\ Patrick\ Arellano\ &\ Rayan\ Syed\ \r\n\ @2.0\r\n
+comment1.params=
+comment1.target=MyWorld()
+comment2.params=
+comment2.target=void\ prepare()
+comment3.params=
+comment3.target=Player\ getPlayer()
+comment4.params=
+comment4.target=void\ act()
+comment5.params=
+comment5.target=void\ SpawnZombies()
+numComments=6

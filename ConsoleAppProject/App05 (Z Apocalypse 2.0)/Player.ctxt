@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Player
+comment0.text=\r\n\ This\ class\ represents\ the\ Player\ in\ the\ game.\ It\ is\ responsible\ for\ player\ movement,\ shooting\ and\ interactions\ with\ other\ game\ objects.\r\n\ \r\n\ @authors\ Rayan\ Syed\ \r\n\ @2.0\r\n
+comment1.params=
+comment1.target=Player()
+comment2.params=weaponButton
+comment2.target=Player(WeaponButton)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ turnAround()
+comment5.params=
+comment5.target=void\ moveAround()
+comment6.params=
+comment6.target=void\ checkMouseButton()
+comment7.params=
+comment7.target=void\ fireProjectile()
+comment8.params=
+comment8.target=boolean\ hitByZombie()
+numComments=9

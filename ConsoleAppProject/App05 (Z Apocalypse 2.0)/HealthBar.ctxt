@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=HealthBar
+comment0.text=\r\n\ The\ health\ bar\ at\ the\ top\ of\ the\ player\ is\ controlled\ in\ this\ class\r\n\ \r\n\ @authors\ James\ Patrick\ Arellano\ \r\n\ @2.0\r\n
+comment1.params=
+comment1.target=HealthBar()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ loseHealth()
+numComments=4

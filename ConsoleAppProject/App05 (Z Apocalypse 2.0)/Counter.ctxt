@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Counter
+comment0.text=\r\n\ This\ class\ is\ responsible\ for\ maintaining\ and\ displaying\ the\ player's\ score\ and\ money.\r\n\ \r\n\ @authors\ James\ Patrick\ Arellano\ \r\n\ @2.0\r\n
+comment1.params=
+comment1.target=Counter()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

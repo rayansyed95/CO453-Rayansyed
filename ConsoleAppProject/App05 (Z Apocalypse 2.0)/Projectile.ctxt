@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Projectile
+comment0.text=\r\n\ This\ class\ represents\ the\ projectiles\ fired\ by\ the\ Player.\ It\ is\ responsible\ for\ its\ own\ movement\ and\ interactions\ with\ other\ game\ objects.\r\n\ \r\n\ @authors\ Rayan\ Syed\ \r\n\ @2.0\r\n
+comment1.params=
+comment1.target=Projectile()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

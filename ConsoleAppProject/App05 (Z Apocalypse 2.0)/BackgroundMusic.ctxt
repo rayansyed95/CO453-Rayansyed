@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=BackgroundMusic
+comment0.text=\r\n\ This\ class\ is\ responsible\ for\ playing\ the\ background\ music\ throughout\ the\ game.\r\n\ \r\n\ @authors\ James\ Patrick\ Arellano\ \r\n\ @2.0\r\n
+comment1.params=
+comment1.target=BackgroundMusic()
+comment2.params=world
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment3.params=
+comment3.target=void\ act()
+numComments=4

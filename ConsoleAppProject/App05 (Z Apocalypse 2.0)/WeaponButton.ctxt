@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=WeaponButton
+comment0.text=\r\n\ This\ class\ represents\ a\ button\ in\ the\ game\ interface\ that\ lets\ the\ player\ upgrade\ their\ weapon.\ It\ interacts\ with\ the\ Counter\ class\ to\ adjust\ the\ player's\ score\ and\ money.\r\n\ \r\n\ @author\ Rayan\ Yousuf\ Syed\r\n\ @version\ 2.0\r\n
+comment1.params=counter
+comment1.target=WeaponButton(Counter)
+comment2.params=
+comment2.target=void\ act()
+numComments=3
